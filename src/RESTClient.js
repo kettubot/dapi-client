@@ -34,7 +34,7 @@ class RESTClient {
   }
 
   async request(method, url, options = {}) {
-    const apiRequest = new APIRequest(this, method, url, options);
+    const request = new APIRequest(this, method, url, options);
     
     // Perform the request
     let res;
