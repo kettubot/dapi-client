@@ -29,7 +29,7 @@ class RESTClient {
   }
 
   getAuth() {
-    if (this.token) return `${this.tokenPrefix} ${this.token}`;
+    if (this.token) return `${this.options.tokenPrefix} ${this.token}`;
     throw new Error('TOKEN_MISSING');
   }
 
